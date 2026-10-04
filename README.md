@@ -92,7 +92,8 @@ The final stage is resolving the reported issue.
 Once the problem has been addressed, the technician can document the resolution and close the ticket. Recording the final solution is important because it provides a reference if the same problem happens again.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Ticket resolution and closure"/>
+<img width="1198" height="661" alt="Screenshot 2026-10-04 003521" src="https://github.com/user-attachments/assets/26d5f1d4-2699-4537-9d56-f877139f05f9" />
+
 </p>
 
 A completed ticket should provide enough information for another technician to understand what happened and how the issue was resolved.
