@@ -1,124 +1,266 @@
-# osTicket - Ticket Lifecycle Walkthrough
+osTicket - Help Desk Ticket Lifecycle
 
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-## Project Overview
+Project Overview
 
-This project demonstrates the basic workflow of handling a support ticket using the open-source help desk platform **osTicket**.
+This project demonstrates a realistic IT help desk ticket lifecycle using the open-source ticketing platform osTicket.
 
-The goal is to show how a help desk technician can receive a request, review the issue, work through troubleshooting steps, communicate with the requester, and eventually resolve the ticket.
+For this scenario, John Cena from the Marketing department reports that he is unable to access the company's Marketing shared drive. The project demonstrates how a help desk technician receives the request, reviews and assigns the ticket, performs troubleshooting, identifies the root cause, communicates with the user, and documents the final resolution.
 
-## Video Demonstration
+The goal of this project is to demonstrate practical help desk skills such as:
 
-* ### [YouTube: How to create, work, and resolve tickets within osTicket](https://www.youtube.com)
+Ticket documentation
 
-## Lab Environment
+User communication
+
+Network troubleshooting
+
+Access and permissions troubleshooting
+
+Root cause analysis
+
+Resolution documentation
+
+Ticket closure
+
+Lab Environment
 
 The following technologies were used for this project:
 
-* **Microsoft Azure** - Virtual machine environment
-* **Remote Desktop** - Remote access to the Windows virtual machine
-* **Internet Information Services (IIS)** - Web server environment
-* **osTicket** - Help desk ticketing platform
+Microsoft Azure - Virtual machine environment
 
-## Operating System
+Remote Desktop (RDP) - Remote access to the Windows virtual machine
 
-* **Windows 10 (21H2)**
+Internet Information Services (IIS) - Web server environment
 
----
+osTicket - Help desk ticketing platform
 
-# Ticket Lifecycle
+Windows 10 (21H2) - Operating system
 
-The ticket process can be broken down into four main stages:
+Ticket Scenario
 
-1. **Ticket Creation**
-2. **Review and Assignment**
-3. **Troubleshooting**
-4. **Resolution and Closure**
+👤 User
 
----
+John Cena
+Department: Marketing
 
-# 1. Ticket Creation
+🎫 Issue
 
-The first step in the lifecycle is receiving and creating the support request.
+John reports that he can no longer access the Marketing shared drive.
 
-At this stage, the technician collects the basic information needed to understand the user's problem. This includes the issue being reported, the affected user, and any relevant details that could help with troubleshooting.
+He receives the following type of message when attempting to access:
 
-<p>
-<img width="1762" height="977" alt="Screenshot 2026-10-03 234347" src="https://github.com/user-attachments/assets/121df3ca-d294-453f-9152-9297dbdd3fc0" />
+\\fileserver\Marketing
 
-</p>
+Windows cannot access \fileserver\Marketing. You do not have permission to access this network resource.
 
-The purpose of the intake stage is to make sure the issue is documented clearly before troubleshooting begins. A well-documented ticket gives the technician a starting point and makes it easier to track the request throughout the support process.
+John states that he was able to access the folder the previous day and needs the files for an active Marketing project.
 
----
+Ticket Lifecycle
 
-# 2. Review and Assignment
+The ticket is handled through four primary stages:
 
-After the ticket has been submitted, the request can be reviewed and assigned appropriately.
+Ticket Creation
 
-During this stage, the technician determines what type of issue has been reported and who should handle it. The ticket may also be given the appropriate priority or department based on the information provided.
+Review and Assignment
 
-<p>
-<img width="1297" height="955" alt="Screenshot 2026-10-04 002336" src="https://github.com/user-attachments/assets/2d786d2f-666a-48af-9e6b-cb715fa4a4b0" />
+Troubleshooting
 
-</p>
+Resolution and Closure
 
-Keeping the ticket organized at this point helps prevent requests from being overlooked and makes it easier to track responsibility for the issue.
+1. Ticket Creation
 
----
+The first step is documenting John's request in osTicket.
 
-# 3. Troubleshooting the Issue
-
-Once the ticket has been assigned, the technician begins working on the reported problem.
-
-This stage involves investigating the symptoms, documenting troubleshooting steps, and communicating with the requester when additional information is needed.
+The technician records the affected user, department, reported symptoms, and the resource the user is attempting to access.
 
 <p>
-<img width="1198" height="661" alt="Screenshot 2026-10-04 003521" src="https://github.com/user-attachments/assets/7c37722b-369a-4581-bde1-f30ea04a1213" />
-
+  <img width="1762" height="977" alt="Ticket Creation" src="https://github.com/user-attachments/assets/121df3ca-d294-453f-9152-9297dbdd3fc0" />
 </p>
 
-The technician should continue adding useful information to the ticket as work progresses. This creates a record of what was checked, what was changed, and what ultimately helped resolve the problem.
+Ticket Information
 
----
+Requester: John Cena
+Department: Marketing
+Issue: Unable to access Marketing shared drive
+Resource: \\fileserver\Marketing
+Priority: Normal
 
-# 4. Resolution and Closure
+The purpose of this stage is to create a clear record of the problem before troubleshooting begins.
 
-The final stage is resolving the reported issue.
+2. Review and Assignment
 
-Once the problem has been addressed, the technician can document the resolution and close the ticket. Recording the final solution is important because it provides a reference if the same problem happens again.
+After the ticket is created, the technician reviews the request and assigns it appropriately.
 
 <p>
-<img width="1198" height="661" alt="Screenshot 2026-10-04 003521" src="https://github.com/user-attachments/assets/26d5f1d4-2699-4537-9d56-f877139f05f9" />
-
+  <img width="1297" height="955" alt="Ticket Review and Assignment" src="https://github.com/user-attachments/assets/2d786d2f-666a-48af-9e6b-cb715fa4a4b0" />
 </p>
 
-A completed ticket should provide enough information for another technician to understand what happened and how the issue was resolved.
+The technician confirms that the issue involves access to a network resource rather than a general computer or Internet problem.
 
----
+The ticket is kept organized so the technician can track ownership, priority, communication, and progress.
 
-# What I Learned
+3. Troubleshooting
 
-This project helped demonstrate how a help desk ticket moves through different stages instead of simply being opened and closed.
+The technician begins investigating the problem and communicates with John to gather additional information.
 
-The main takeaway is that good ticket management involves:
+<p>
+  <img width="1198" height="661" alt="Troubleshooting" src="https://github.com/user-attachments/assets/7c37722b-369a-4581-bde1-f30ea04a1213" />
+</p>
 
-* Clearly documenting the original problem
-* Assigning the request appropriately
-* Recording troubleshooting steps
-* Communicating with the user
-* Documenting the final resolution
-* Closing the ticket once the issue has been addressed
+Troubleshooting Steps
 
-This workflow provides a structured way for IT support teams to manage user requests and keep track of their work.
+1. Test another network share
 
----
+John is asked to access:
 
-# Summary
+\\fileserver\Public
 
-The osTicket ticket lifecycle provides a simple example of how help desk requests can be organized from beginning to end.
+The Public share works successfully.
 
-**Ticket Created → Reviewed & Assigned → Troubleshooting → Resolved & Closed**
+2. Verify connectivity to the file server
+
+The technician has John test the server:
+
+ping fileserver
+
+The server responds, indicating that network connectivity is working.
+
+3. Narrow down the problem
+
+Because John can reach the file server and access another shared folder, the problem appears to be isolated to the Marketing share.
+
+4. Check account permissions
+
+The technician reviews John's account permissions and discovers that his account is no longer a member of the required Marketing security group.
+
+Root Cause
+
+John's account lost membership in the security group that provides access to the Marketing shared drive.
+
+4. Resolution and Closure
+
+The technician restores John's membership in the appropriate Marketing security group.
+
+<p>
+  <img width="1198" height="661" alt="Resolution and Closure" src="https://github.com/user-attachments/assets/26d5f1d4-2699-4537-9d56-f877139f05f9" />
+</p>
+
+John is instructed to sign out of Windows and sign back in so the updated permissions can be applied.
+
+He then tests:
+
+\\fileserver\Marketing
+
+The Marketing folder opens successfully.
+
+Resolution
+
+Restored John's membership in the Marketing security group. User signed back into Windows and successfully accessed the Marketing shared drive.
+
+Ticket Status: Resolved
+
+Technician Notes
+
+Problem
+
+John Cena from Marketing was unable to access the Marketing shared drive.
+
+Investigation
+
+Verified the user could access other network shares.
+
+Confirmed connectivity to the file server.
+
+Determined the issue was isolated to the Marketing share.
+
+Reviewed the user's account permissions.
+
+Found that the user was missing from the Marketing security group.
+
+Root Cause
+
+The user's account no longer had membership in the security group required to access the Marketing shared drive.
+
+Solution
+
+Restored the user's Marketing security group membership and had the user sign out and sign back in.
+
+Verification
+
+John successfully opened:
+
+\\fileserver\Marketing
+
+and confirmed that the required files were accessible.
+
+What I Learned
+
+This project demonstrates that help desk troubleshooting is more than simply fixing a technical problem. A technician must also properly document the issue, communicate with the user, investigate the symptoms, identify the root cause, and record the resolution.
+
+The main skills demonstrated in this project include:
+
+Creating and documenting support tickets
+
+Reviewing and assigning tickets
+
+Communicating with end users
+
+Troubleshooting network connectivity
+
+Troubleshooting shared-folder access
+
+Understanding user permissions and security groups
+
+Identifying root causes
+
+Documenting technical resolutions
+
+Closing tickets after verifying the solution
+
+Ticket Workflow
+
+┌──────────────────┐
+│  Ticket Created  │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────────┐
+│ Review & Assignment  │
+└────────┬─────────────┘
+         │
+         ▼
+┌──────────────────┐
+│   Troubleshoot   │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────────┐
+│ Identify Root Cause  │
+└────────┬─────────────┘
+         │
+         ▼
+┌──────────────────┐
+│ Apply Resolution │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────────┐
+│ Verify With User     │
+└────────┬─────────────┘
+         │
+         ▼
+┌──────────────────┐
+│ Ticket Resolved  │
+└──────────────────┘
+
+Summary
+
+This osTicket project demonstrates a complete help desk workflow using a realistic user-access scenario.
+
+John Cena reports an access problem → Ticket is created → Technician reviews the issue → Network connectivity is tested → Permissions are investigated → Root cause is identified → Access is restored → User verifies the fix → Ticket is resolved.
+
+This workflow demonstrates how an IT support technician can use a ticketing system to organize, troubleshoot, document, and resolve a real-world support request.
