@@ -47,7 +47,8 @@ The first step in the lifecycle is receiving and creating the support request.
 At this stage, the technician collects the basic information needed to understand the user's problem. This includes the issue being reported, the affected user, and any relevant details that could help with troubleshooting.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Ticket creation and intake"/>
+<img width="1762" height="977" alt="Screenshot 2026-10-03 234347" src="https://github.com/user-attachments/assets/121df3ca-d294-453f-9152-9297dbdd3fc0" />
+
 </p>
 
 The purpose of the intake stage is to make sure the issue is documented clearly before troubleshooting begins. A well-documented ticket gives the technician a starting point and makes it easier to track the request throughout the support process.
@@ -61,7 +62,8 @@ After the ticket has been submitted, the request can be reviewed and assigned ap
 During this stage, the technician determines what type of issue has been reported and who should handle it. The ticket may also be given the appropriate priority or department based on the information provided.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Ticket review and assignment"/>
+<img width="1297" height="955" alt="Screenshot 2026-10-04 002336" src="https://github.com/user-attachments/assets/2d786d2f-666a-48af-9e6b-cb715fa4a4b0" />
+
 </p>
 
 Keeping the ticket organized at this point helps prevent requests from being overlooked and makes it easier to track responsibility for the issue.
@@ -75,7 +77,8 @@ Once the ticket has been assigned, the technician begins working on the reported
 This stage involves investigating the symptoms, documenting troubleshooting steps, and communicating with the requester when additional information is needed.
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Troubleshooting and ticket updates"/>
+<img width="1198" height="661" alt="Screenshot 2026-10-04 003521" src="https://github.com/user-attachments/assets/7c37722b-369a-4581-bde1-f30ea04a1213" />
+
 </p>
 
 The technician should continue adding useful information to the ticket as work progresses. This creates a record of what was checked, what was changed, and what ultimately helped resolve the problem.
